@@ -1,0 +1,82 @@
+<div class="container mt-4">
+  <h2 i18n class="text-center">Crear una nueva imagen</h2>
+  <form [formGroup]="imageForm" (ngSubmit)="!imageForm.invalid && createImage(imageForm.value)">
+    <!-- Source -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="source">Fuente</label>
+      <input novalidate id="source" class="form-control" formControlName="source" i18n-placeholder placeholder="URL de la imagen" />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          imageForm.get('source')!.hasError('required') &&
+          imageForm.get('source')!.touched
+        ">
+        Fuente requerida
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="imageForm.get('source')!.hasError('pattern')">
+        La URL no es correcta
+      </div>
+    </div>
+
+    <!--Alt Text-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="altText">Texto alternativo</label>
+      <input novalidate id="altText" class="form-control" formControlName="altText"
+        placeholder="Texto alternativo de la imagen" i18n-placeholder/>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              imageForm.get('altText')!.hasError('required') &&
+              imageForm.get('altText')!.touched
+            ">
+        Texto alternativo requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="imageForm.get('altText')!.hasError('maxlength')">
+        Texto alternativo demasiado extenso
+      </div>
+    </div>
+
+    <!--Height -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="height">Altura</label>
+      <input novalidate id="height" class="form-control" formControlName="height" type="number"
+        placeholder="Altura de la imagen" i18n-placeholder/>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              imageForm.get('height')!.hasError('required') &&
+              imageForm.get('height')!.touched
+            ">
+        Altura requerida
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="imageForm.get('height')!.hasError('max')">
+        La altura no puede ser mayor a 10000
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="imageForm.get('height')!.hasError('min')">
+        La altura no puede ser menor a 0
+      </div>
+    </div>
+
+    <!--Width -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="width">Ancho</label>
+      <input novalidate id="width" class="form-control" formControlName="width" type="number"
+        placeholder="Ancho de la imagen" i18n-placeholder />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              imageForm.get('width')!.hasError('required') &&
+              imageForm.get('width')!.touched
+            ">
+        Ancho requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="imageForm.get('width')!.hasError('max')">
+        El ancho no puede ser mayor a 10000
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="imageForm.get('width')!.hasError('min')">
+        El ancho no puede ser menor a 0
+      </div>
+    </div>
+
+    <button i18n type="submit" class="btn btn-primary mx-sm-3 mt-4 mb-2" [disabled]="!imageForm.valid">
+      Crear
+    </button>
+    <button i18n type="button" class="btn btn-danger mt-4 mb-2" (click)="cancelCreation()">
+      Cancelar
+    </button>
+  </form>
+</div>

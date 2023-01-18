@@ -1,0 +1,27 @@
+describe('Test Artworks', () => {
+  it('Visits the artworks/list', () => {
+    cy.visit('/artworks')
+    cy.contains('Dogs')
+    cy.contains('Año: 1975')
+    cy.contains('Ver detalle')
+  })
+  it('Visits the artworks/detail', () => {
+    cy.visit('/artworks/100')
+    cy.contains('Dogs')
+    cy.contains('Brett Whiteley')
+    cy.contains('1975')
+    cy.contains('Painting')
+    cy.contains('Brett Whiteley felt deeply connected to animals since childhood. In fact, between 1965 and 1988 he staged four exhibitions whose predominant or exclusive subject was animals that he had observed in zoos, domestic environments and in nature.')
+  })
+  it('Visits the artworks/create', () => {
+    cy.visit('/artworks/create')
+    cy.contains('Crear una nueva obra de arte')
+    cy.contains('Nombre')
+    cy.contains('Año')
+    cy.contains('Descripción')
+    cy.contains('Tipo')
+    cy.contains('Artista')
+    cy.contains('Crear')
+    cy.contains('Cancelar')
+  })
+})

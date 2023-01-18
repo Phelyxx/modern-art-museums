@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <h2 i18n class="text-center">Crear un nuevo artista</h2>
+  <form [formGroup]="artistForm" (ngSubmit)="!artistForm.invalid && createArtist(artistForm.value)">
+    <!--Name-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="name">Nombre</label>
+      <input novalidate id="name" class="form-control" formControlName="name" placeholder="Nombre del artista"
+        i18n-placeholder />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artistForm.get('name')!.hasError('required') &&
+          artistForm.get('name')!.touched
+        ">
+        Nombre requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="artistForm.get('name')!.hasError('minlength')">
+        Nombre muy corto
+      </div>
+    </div>
+
+    <!--Birth Place-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="birthplace">Lugar de nacimiento</label>
+      <input i18n novalidate id="birthplace" class="form-control" formControlName="birthplace" i18n-placeholder
+        placeholder="Lugar de nacimiento del artista" />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              artistForm.get('birthplace')!.hasError('required') &&
+              artistForm.get('birthplace')!.touched
+            ">
+        Lugar de nacimiento requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="artistForm.get('birthplace')!.hasError('maxlength')">
+        Lugar de nacimiento demasiado extenso
+      </div>
+    </div>
+
+    <!--Birth Date-->
+    <!-- Let the user select a date-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="birthdate">Fecha de nacimiento</label>
+      <input i18n novalidate id="birthdate" class="form-control" type="date" formControlName="birthdate"
+        placeholder="Fecha de nacimiento del artista" i18n-placeholder />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artistForm.get('birthdate')!.hasError('required') &&
+          artistForm.get('birthdate')!.touched
+        ">
+        Fecha de nacimiento requerida
+      </div>
+    </div>
+
+    <!--Image-->
+    <!-- Let the user select an image from the images array -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="image">Imagen</label>
+      <select novalidate id="image" class="form-control" formControlName="image">
+        <option *ngFor="let image of images" [ngValue]="image">{{image.altText}} {{image.id}} </option>
+      </select>
+      <img *ngIf="!artistForm.get('image')!.hasError('required')" [src]="artistForm.get('image')?.value?.source"
+        i18n-alt alt="Imagen del artista" class="img-fluid mt-2">
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artistForm.get('image')!.hasError('required') &&
+          artistForm.get('image')!.touched
+        ">
+        Imagen requerida
+      </div>
+    </div>
+
+    <button i18n type="submit" class="btn btn-primary mx-sm-3 mt-4 mb-2" [disabled]="!artistForm.valid">
+      Crear
+    </button>
+    <button i18n type="button" class="btn btn-danger mt-4 mb-2" (click)="cancelCreation()">
+      Cancelar
+    </button>
+  </form>
+</div>

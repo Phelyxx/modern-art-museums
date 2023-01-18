@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a i18n href="">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a i18n href="artworks">Obras de Arte</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a  href="artworks/{{artwork.id}}">{{ artwork.name }}</a></li>
+      </ol>
+    </nav>
+  </div>
+</nav>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ artwork.name }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ artwork.images[0].source }}"
+          alt="{{ artwork.images[0].altText }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt i18n>Artista</dt>
+        <dd><a href="/artists/{{ artwork.artist.id }}">{{ artwork.artist.name }}</a></dd>
+        <dt i18n>Año</dt>
+        <dd>{{ artwork.year }}</dd>
+        <hr />
+        <dt i18n>Tipo</dt>
+        <dd>{{ artwork.type }}</dd>
+        <hr />
+        <dt i18n class="bold">Descripción</dt>
+        <dd>{{ artwork.description }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>

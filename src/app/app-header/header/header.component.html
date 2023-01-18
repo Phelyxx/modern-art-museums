@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="navbar-label-1">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-3" (click)="goTo('')">
+      <h1 i18n class="fs-3 mt-1">ArteModerno</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a i18n class="nav-link active" aria-current="page" (click)="goTo('museums')">Museos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a i18n class="nav-link dropdown-toggle active" href="#" id="navBarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Artistas</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a i18n class="dropdown-item" (click)="goTo('artists')">Lista</a></li>
+            <li><a i18n class="dropdown-item" (click)="goTo('artists/create')">Crear</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a i18n class="nav-link dropdown-toggle active" href="#" id="navBarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Imágenes</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a i18n class="dropdown-item" (click)="goTo('images/create')">Crear</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a i18n class="nav-link dropdown-toggle active" href="#" id="navBarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Obras de arte</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a i18n class="dropdown-item" (click)="goTo('artworks')">Lista</a></li>
+            <li><a i18n class="dropdown-item" (click)="goTo('artworks/create')">Crear</a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

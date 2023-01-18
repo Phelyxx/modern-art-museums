@@ -1,0 +1,95 @@
+<testExecutions version="1">
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="33"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="9"/>
+  </file>
+  <file path="src/app/artist/artist.service.spec.ts">
+    <testCase name="Service: Artist should ..." duration="4"/>
+  </file>
+  <file path="src/app/artist/artist-list/artist-list.component.spec.ts">
+    <testCase name="ArtistListComponent should have h5 tag with the artist.name" duration="51"/>
+    <testCase name="ArtistListComponent should have 9 &lt;div.col.mb-4> elements and the deleted artist should not exist" duration="13"/>
+    <testCase name="ArtistListComponent should have 10 &lt;card.h-100> elements" duration="10"/>
+    <testCase name="ArtistListComponent should have 10 &lt;img> elements" duration="13"/>
+    <testCase name="ArtistListComponent should have 10 &lt;div.card-body> elements" duration="11"/>
+    <testCase name="ArtistListComponent should have the corresponding src to the artist image and alt to the artist name" duration="12"/>
+    <testCase name="ArtistListComponent should create" duration="8"/>
+    <testCase name="ArtistListComponent should have 10 &lt;div.col.mb-4> elements" duration="9"/>
+  </file>
+  <file path="src/app/artist/artist-create/artist-create.component.spec.ts">
+    <testCase name="ArtistCreateComponent should validate artist fields" duration="44"/>
+    <testCase name="ArtistCreateComponent should create" duration="13"/>
+    <testCase name="ArtistCreateComponent should have 1 &lt;div.form-group> image option" duration="8"/>
+  </file>
+  <file path="src/app/app-header/header/header.component.spec.ts">
+    <testCase name="HeaderComponent should create" duration="15"/>
+  </file>
+  <file path="src/app/museum/museum-list/museum-list.component.spec.ts">
+    <testCase name="MuseumListComponent should create" duration="12"/>
+    <testCase name="MuseumListComponent should have 10 &lt;img> elements" duration="9"/>
+    <testCase name="MuseumListComponent should have 10 &lt;div.col.mb-4> elements" duration="8"/>
+    <testCase name="MuseumListComponent should have 9 &lt;div.col.mb-4> elements and the deleted museum should not exist" duration="8"/>
+    <testCase name="MuseumListComponent should have h5 tag with the museum.name" duration="11"/>
+    <testCase name="MuseumListComponent should have the corresponding src to the museum image and alt to the museum name" duration="12"/>
+    <testCase name="MuseumListComponent should have 10 &lt;div.card-body> elements" duration="12"/>
+    <testCase name="MuseumListComponent should have 10 &lt;card.h-100> elements" duration="9"/>
+  </file>
+  <file path="src/app/museum/museum.service.spec.ts">
+    <testCase name="Service: Museum should ..." duration="3"/>
+  </file>
+  <file path="src/app/home/home.component.spec.ts">
+    <testCase name="HomeComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/museum/museum-detail/museum-detail.component.spec.ts">
+    <testCase name="MuseumDetailComponent should have an img element with src=museum.image" duration="20"/>
+    <testCase name="MuseumDetailComponent should create" duration="10"/>
+    <testCase name="MuseumDetailComponent should have 10 card footers of museum artworks" duration="9"/>
+    <testCase name="MuseumDetailComponent should have an img element with alt=artist.museum.altText" duration="6"/>
+  </file>
+  <file path="src/app/artwork/artwork-list/artwork-list.component.spec.ts">
+    <testCase name="ArtworkListComponent should create" duration="12"/>
+    <testCase name="ArtworkListComponent should have 10 &lt;card.h-100> elements" duration="6"/>
+    <testCase name="ArtworkListComponent should have 10 &lt;div.col.mb-4> elements" duration="5"/>
+    <testCase name="ArtworkListComponent should have 10 &lt;div.card-body> elements" duration="6"/>
+    <testCase name="ArtworkListComponent should have 10 &lt;img> elements" duration="7"/>
+    <testCase name="ArtworkListComponent should have h5 tag with the artwork.name" duration="6"/>
+    <testCase name="ArtworkListComponent should have the corresponding src to the artwork image and alt to the artwork name" duration="8"/>
+    <testCase name="ArtworkListComponent should have 9 &lt;div.col.mb-4> elements and the deleted artwork should not exist" duration="6"/>
+  </file>
+  <file path="src/app/artwork/artwork-create/artwork-create.component.spec.ts">
+    <testCase name="ArtworkCreateComponent should validate artwork fields" duration="29"/>
+    <testCase name="ArtworkCreateComponent should create" duration="7"/>
+    <testCase name="ArtworkCreateComponent should have 1 &lt;div.form-group> artwork option" duration="8"/>
+  </file>
+  <file path="src/app/artwork/artwork.service.spec.ts">
+    <testCase name="Service: Artwork should ..." duration="2"/>
+  </file>
+  <file path="src/app/artist/artist-detail/artist-detail.component.spec.ts">
+    <testCase name="ArtistDetailComponent should have 10 card footers of artist artworks" duration="17"/>
+    <testCase name="ArtistDetailComponent should have 10 &lt;a> of movements inside .col-md-3" duration="8"/>
+    <testCase name="ArtistDetailComponent should have an img element with src=artist.image" duration="7"/>
+    <testCase name="ArtistDetailComponent should have an img element with alt=artist.image.altText" duration="8"/>
+    <testCase name="ArtistDetailComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/artwork/artwork-detail/artwork-detail.component.spec.ts">
+    <testCase name="ArtworkDetailComponent should have one dd tag for component.artworkDetail.description" duration="11"/>
+    <testCase name="ArtworkDetailComponent should create" duration="6"/>
+    <testCase name="ArtworkDetailComponent should have a p.h3.p-3 element with artworkDetail.name" duration="6"/>
+    <testCase name="ArtworkDetailComponent should have an img element with src= artworkDetail.images.source" duration="5"/>
+    <testCase name="ArtworkDetailComponent should have an img element with alt= artworkDetail.images.altText" duration="3"/>
+    <testCase name="ArtworkDetailComponent should have one dd tag for component.artworkDetail.artist.name" duration="4"/>
+    <testCase name="ArtworkDetailComponent should have one dd tag for component.artworkDetail.year" duration="5"/>
+    <testCase name="ArtworkDetailComponent should have one dd tag for component.artworkDetail.type" duration="5"/>
+  </file>
+  <file path="src/app/image/image-create/image-create.component.spec.ts">
+    <testCase name="ImageCreateComponent should validate image fields" duration="21"/>
+    <testCase name="ImageCreateComponent should have 4 &lt;div.form-group> elements" duration="6"/>
+    <testCase name="ImageCreateComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/image/image.service.spec.ts">
+    <testCase name="Service: Image should ..." duration="1"/>
+  </file>
+  <file path="src/app/interceptors/http-error-interceptor.service.spec.ts">
+    <testCase name="Service: HttpErrorInterceptor should ..." duration="2"/>
+  </file>
+</testExecutions>

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a i18n href="">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a i18n href="artworks">Obras de Arte</a></li>
+      </ol>
+    </nav>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let artwork of artworks" class="col mb-4">
+      <div class="card h-100" style="width: 18rem;">
+        <img
+        class="card-img-top"
+        src="{{ artwork.images[0].source }}"
+        alt="{{ artwork.images[0].altText }}"
+      />
+        <div class="card-body">
+          <h5 class="card-title">{{ artwork.name }}</h5>
+          <p class="card-text"> <b i18n>Año:</b> {{ artwork.year }}</p>
+          <button i18n type="button"  class="btn btn-primary" (click)="onArtworkDetail(artwork.id)">Ver detalle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

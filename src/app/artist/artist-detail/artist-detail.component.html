@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a i18n href="">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a i18n href="artists">Artistas</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="artists/{{artist.id}}">{{artist.name}}</a></li>
+      </ol>
+    </nav>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-md-3">
+    <div class="ms-5">
+      <h2 class="mb-4 mt-4 fs-3">{{artist.name}}</h2>
+      <img class="img-fluid rounded mb-2" src="{{ artist.image.source }}" alt="{{ artist.image.altText }}" />
+      <span><br><b i18n>Lugar de nacimiento:</b> <br>
+        {{ artist.birthplace }} <br>
+        <b i18n>Fecha de nacimiento:</b> <br>
+        {{ formatDate(artist.birthdate) }} <br>
+        <b i18n>Movimientos artísticos:</b> </span>
+      <div *ngFor="let movement of artist.movements">
+        <a href="movements/{{movement.id}}">{{movement.name}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="">
+      <div class="card mb-3 m-5">
+        <div i18n class="card-header text-black">Obras del artista</div>
+        <div class="card-body">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let artwork of artist.artworks">
+              <div class="card border-dark h-75">
+                <div class="card-header fw-bold">{{artwork.name}}</div>
+                <div class="card-body text-dark overflow-scroll" style="overflow-y: auto" tabindex="0">
+                  <p class="card-text"> <b i18n>Año:</b> {{artwork.year}} <br>
+                    <b i18n>Descripción:</b> {{artwork.description}}
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a i18n href="artworks/{{artwork.id}}" class="card-link">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

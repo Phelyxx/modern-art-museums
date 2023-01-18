@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a i18n href="">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a i18n href="artists">Artistas</a></li>
+      </ol>
+    </nav>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let artist of artists" class="col mb-4">
+      <div class="card h-100" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="{{ artist.image.source }}"
+          alt="{{ artist.image.altText }}"
+        />
+        <div class="card-body">
+          <h2 class="card-title fs-4">{{ artist.name }}</h2>
+          <p class="card-text"> <b i18n>Lugar de nacimiento:</b> {{ artist.birthplace }}</p>
+          <p class="card-text"> <b i18n>Fecha de nacimiento:</b> {{ formatDate(artist.birthdate) }}</p>
+          <button i18n type="button"  class="btn btn-primary" (click)="onArtistDetail(artist.id)">Ver detalle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

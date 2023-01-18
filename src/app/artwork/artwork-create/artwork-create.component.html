@@ -1,0 +1,104 @@
+<div class="container mt-4">
+  <h2 i18n class="text-center">Crear una nueva obra de arte</h2>
+  <form [formGroup]="artworkForm" (ngSubmit)="!artworkForm.invalid && createArtwork(artworkForm.value)">
+    <!--Name-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="name">Nombre</label>
+      <input novalidate id="name" class="form-control" formControlName="name" placeholder="Nombre de la obra de arte"
+        i18n-placeholder />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artworkForm.get('name')!.hasError('required') &&
+          artworkForm.get('name')!.touched
+        ">
+        Nombre requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="artworkForm.get('name')!.hasError('minlength')">
+        Nombre muy corto
+      </div>
+    </div>
+
+    <!--Year-->
+    <!-- Let the user select a date-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="year">Año</label>
+      <input i18n novalidate id="year" class="form-control" type="number" min="1" max="2099" step="1"formControlName="year"
+        placeholder="Año de la obra de arte" i18n-placeholder />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artworkForm.get('year')!.hasError('required') &&
+          artworkForm.get('year')!.touched
+        ">
+        Año requerido
+      </div>
+    </div>
+
+    <!--Description-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="description">Descripción</label>
+      <input i18n novalidate id="description" class="form-control" type="text" formControlName="description" i18n-placeholder
+        placeholder="Descripción de la obra de arte" />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              artworkForm.get('description')!.hasError('required') &&
+              artworkForm.get('description')!.touched
+            ">
+        Descripción requerido
+      </div>
+      <div i18n class="alert alert-danger alert-dismissible fade show"
+        *ngIf="artworkForm.get('description')!.hasError('maxlength')">
+        Descripción demasiado extenso
+      </div>
+    </div>
+
+    <!--Type-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="type">Tipo</label>
+      <input i18n novalidate id="description" class="form-control" type="text" formControlName="type" i18n-placeholder
+        placeholder="Tipo de obra de arte" />
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+              artworkForm.get('type')!.hasError('required') &&
+              artworkForm.get('type')!.touched
+            ">
+        Tipo requerido
+      </div>
+    </div>
+
+    <!--Artist-->
+    <!-- Let the user select an artist from the artists array -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="artist">Artista</label>
+      <select novalidate id="artist" class="form-control" formControlName="artist">
+        <option *ngFor="let artist of artists" [ngValue]="artist">{{artist.name}} <small>({{artist.id}})</small> </option>
+      </select>
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artworkForm.get('artist')!.hasError('required') &&
+          artworkForm.get('artist')!.touched
+        ">
+        Artista requerido
+      </div>
+    </div>
+
+    <!--Image-->
+    <!-- Let the user select an image from the images array -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label i18n for="image">Imagen</label>
+      <select novalidate id="image" class="form-control" formControlName="image">
+        <option *ngFor="let image of images" [ngValue]="image">{{image.altText}} <small>({{image.id}})</small> </option>
+      </select>
+      <img *ngIf="!artworkForm.get('image')!.hasError('required')" [src]="artworkForm.get('image')?.value?.source"
+        i18n-alt alt="Imagen de la obra de arte" class="img-fluid mt-2">
+      <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="
+          artworkForm.get('image')!.hasError('required') &&
+          artworkForm.get('image')!.touched
+        ">
+        Imagen requerida
+      </div>
+    </div>
+
+    <button i18n type="submit" class="btn btn-primary mx-sm-3 mt-4 mb-2" [disabled]="!artworkForm.valid">
+      Crear
+    </button>
+    <button i18n type="button" class="btn btn-danger mt-4 mb-2" (click)="cancelCreation()">
+      Cancelar
+    </button>
+  </form>
+</div>

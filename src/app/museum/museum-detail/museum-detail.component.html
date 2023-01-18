@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="museums">Museos</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="museums/{{museum.id}}">{{museum.name}}</a></li>
+      </ol>
+    </nav>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-md-3">
+    <div class="ms-5">
+      <h3 class="mb-4 mt-4">{{museum.name}}</h3>
+      <img class="img-fluid rounded mb-2" src="{{ museum.image.source }}" alt="{{ museum.image.altText }}" />
+      <span><br><b>Ciudad:</b> <br>
+        {{ museum.city }} <br>
+        <b>Dirección:</b> <br>
+        {{ museum.address }} <br>
+        <b>Descripción:</b> <br>
+        {{ museum.description }} <br> </span>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="">
+      <div class="card mb-3 m-5">
+        <div class="card-header text-primary">Obras del arte del museo</div>
+        <div class="card-body">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let artwork of museum.artworks">
+              <div class="card border-dark h-75">
+                <div class="card-header fw-bold">{{artwork.name}}</div>
+                <div class="card-body text-dark overflow-auto">
+                  <img
+                    class="card-img-top"
+                    src="{{ museum.image.source }}"
+                    alt="{{ museum.image.altText }}"
+                  />
+                  <p class="card-text">  <b>Año:</b> {{artwork.year}} <br>
+                     <b>Descripción:</b> {{artwork.description}}</p>
+                </div>
+                <div class="card-footer">
+                  <a href="artworks/{{artwork.id}}" class="card-link">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

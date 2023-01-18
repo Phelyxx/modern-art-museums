@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es-CO" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4142538958217036694" datatype="html">
+        <source>ArteModerno</source>
+        <target>ModernArt</target>
+      </trans-unit>
+      <trans-unit id="4088005640535928145" datatype="html">
+        <source>Museos</source>
+        <target>Museums</target>
+      </trans-unit>
+      <trans-unit id="8991632347965179602" datatype="html">
+        <source>Artistas</source>
+        <target>Artists</target>
+      </trans-unit>
+      <trans-unit id="1802619862731601881" datatype="html">
+        <source>Lista</source>
+        <target>List</target>
+      </trans-unit>
+      <trans-unit id="2577704668878910648" datatype="html">
+        <source>Imágenes</source>
+        <target>Images</target>
+      </trans-unit>
+      <trans-unit id="8284705088749866157" datatype="html">
+        <source>Crear</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="1411646255446071037" datatype="html">
+        <source>Obras de arte</source>
+        <target>Artworks</target>
+      </trans-unit>
+      <trans-unit id="7723695750578152987" datatype="html">
+        <source>Crear un nuevo artista</source>
+        <target>Create a new artist</target>
+      </trans-unit>
+      <trans-unit id="5357661269973482487" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="2660389580258046923" datatype="html">
+        <source> Nombre requerido </source>
+        <target> Name required </target>
+      </trans-unit>
+      <trans-unit id="4496512234713432164" datatype="html">
+        <source> Nombre muy corto </source>
+        <target> Name too short </target>
+      </trans-unit>
+      <trans-unit id="5272499330959871776" datatype="html">
+        <source>Lugar de nacimiento</source>
+        <target>Birthplace</target>
+      </trans-unit>
+      <trans-unit id="6769998166833217432" datatype="html">
+        <source> Lugar de nacimiento requerido </source>
+        <target> Birthplace required </target>
+      </trans-unit>
+      <trans-unit id="6972791313625192946" datatype="html">
+        <source> Lugar de nacimiento demasiado extenso </source>
+        <target> Birthplace too long </target>
+      </trans-unit>
+      <trans-unit id="5663773212361906083" datatype="html">
+        <source>Fecha de nacimiento</source>
+        <target>Birthdate</target>
+      </trans-unit>
+      <trans-unit id="8269921024985002323" datatype="html">
+        <source> Fecha de nacimiento requerida </source>
+        <target> Birthdate required </target>
+      </trans-unit>
+      <trans-unit id="7937626225231657725" datatype="html">
+        <source>Imagen</source>
+        <target>Image</target>
+      </trans-unit>
+      <trans-unit id="8429396061328219614" datatype="html">
+        <source> Imagen requerida </source>
+        <target> Image required </target>
+      </trans-unit>
+      <trans-unit id="3537661427620985266" datatype="html">
+        <source> Crear </source>
+        <target> Create </target>
+      </trans-unit>
+      <trans-unit id="6060080757060540228" datatype="html">
+        <source> Cancelar </source>
+        <target> Cancel </target>
+      </trans-unit>
+      <trans-unit id="1926157928707021468" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="6982868076201958175" datatype="html">
+        <source>Lugar de nacimiento:</source>
+        <target>Birthplace:</target>
+      </trans-unit>
+      <trans-unit id="3574349947967059116" datatype="html">
+        <source>Fecha de nacimiento:</source>
+        <target>Birthdate:</target>
+      </trans-unit>
+      <trans-unit id="2326046623410371095" datatype="html">
+        <source>Movimientos artísticos:</source>
+        <target>Artistic movements:</target>
+      </trans-unit>
+      <trans-unit id="911349508459536076" datatype="html">
+        <source>Obras del artista</source>
+        <target>Artist&apos;s works</target>
+      </trans-unit>
+      <trans-unit id="1689068839324657424" datatype="html">
+        <source>Año:</source>
+        <target>Year:</target>
+      </trans-unit>
+      <trans-unit id="2665781399099373735" datatype="html">
+        <source>Descripción:</source>
+        <target>Description:</target>
+      </trans-unit>
+      <trans-unit id="7607208936794683365" datatype="html">
+        <source>Ver detalle</source>
+        <target>View detail</target>
+      </trans-unit>
+      <trans-unit id="4966761266580970941" datatype="html">
+        <source>Crear una nueva imagen</source>
+        <target>Create a new image</target>
+      </trans-unit>
+      <trans-unit id="4865848136482063272" datatype="html">
+        <source>Fuente</source>
+        <target>Source</target>
+      </trans-unit>
+      <trans-unit id="4556473547453717144" datatype="html">
+        <source> Fuente requerida </source>
+        <target> Source required </target>
+      </trans-unit>
+      <trans-unit id="3423016157791572294" datatype="html">
+        <source> La URL no es correcta </source>
+        <target> The URL is not correct </target>
+      </trans-unit>
+      <trans-unit id="5717482488406469512" datatype="html">
+        <source>Texto alternativo</source>
+        <target>Alternative text</target>
+      </trans-unit>
+      <trans-unit id="1311677576027197259" datatype="html">
+        <source> Texto alternativo requerido </source>
+        <target> Alternative text required </target>
+      </trans-unit>
+      <trans-unit id="7679190383022628202" datatype="html">
+        <source> Texto alternativo demasiado extenso </source>
+        <target> Alternative text too long </target>
+      </trans-unit>
+      <trans-unit id="8246436520802365546" datatype="html">
+        <source>Altura</source>
+        <target>Height</target>
+      </trans-unit>
+      <trans-unit id="2941066752993820484" datatype="html">
+        <source> Altura requerida </source>
+        <target> Height required </target>
+      </trans-unit>
+      <trans-unit id="1203061455976928431" datatype="html">
+        <source> La altura no puede ser mayor a 10000 </source>
+        <target> The height cannot be greater than 10000 </target>
+      </trans-unit>
+      <trans-unit id="6014109064846435585" datatype="html">
+        <source> La altura no puede ser menor a 0 </source>
+        <target> The height cannot be less than 0 </target>
+      </trans-unit>
+      <trans-unit id="7192615984274171158" datatype="html">
+        <source>Ancho</source>
+        <target>Width</target>
+      </trans-unit>
+      <trans-unit id="5833285252210332164" datatype="html">
+        <source> Ancho requerido </source>
+        <target> Width required </target>
+      </trans-unit>
+      <trans-unit id="3069259452579158191" datatype="html">
+        <source> El ancho no puede ser mayor a 10000 </source>
+        <target> The width cannot be greater than 10000 </target>
+      </trans-unit>
+      <trans-unit id="7431879686308037847" datatype="html">
+        <source> El ancho no puede ser menor a 0 </source>
+        <target> The width cannot be less than 0 </target>
+      </trans-unit>
+      <trans-unit id="109988240335450516" datatype="html">
+        <source>Nombre del artista</source>
+        <target state="new">Name of the artist</target>
+      </trans-unit>
+      <trans-unit id="3776973194361817652" datatype="html">
+        <source>Lugar de nacimiento del artista</source>
+        <target state="new">Artist&apos;s birthplace</target>
+      </trans-unit>
+      <trans-unit id="5195542548223464936" datatype="html">
+        <source>Fecha de nacimiento del artista</source>
+        <target state="new">Artist&apos;s birthdate</target>
+      </trans-unit>
+      <trans-unit id="8695523401386938003" datatype="html">
+        <source>URL de la imagen</source>
+        <target state="new">Image URL</target>
+      </trans-unit>
+      <trans-unit id="492888258840958799" datatype="html">
+        <source>Texto alternativo de la imagen</source>
+        <target state="new">Image alternative text</target>
+      </trans-unit>
+      <trans-unit id="2474294213820219737" datatype="html">
+        <source>Altura de la imagen</source>
+        <target state="new">Image height</target>
+      </trans-unit>
+      <trans-unit id="407707772533217530" datatype="html">
+        <source>Ancho de la imagen</source>
+        <target state="new">Image width</target>
+      </trans-unit>
+      <trans-unit id="6385697419511968313" datatype="html">
+        <source>Imagen del artista</source>
+        <target state="new">Artist&apos;s image</target>
+      </trans-unit>
+      <trans-unit id="7112793906072989572" datatype="html">
+        <source>Crear una nueva obra de arte</source>
+        <target state="new">Create a new artwork</target>
+      </trans-unit>
+      <trans-unit id="7907333527633623417" datatype="html">
+        <source>Nombre de la obra de arte</source>
+        <target state="new">Artwork&apos;s name</target>
+      </trans-unit>
+      <trans-unit id="4448379371353374337" datatype="html">
+        <source>Año</source>
+        <target state="new">Year</target>
+      </trans-unit>
+      <trans-unit id="8403513280374813647" datatype="html">
+        <source> Año requerido </source>
+        <target state="new"> Year required </target>
+      </trans-unit>
+      <trans-unit id="2702769239797460498" datatype="html">
+        <source>Descripción</source>
+        <target state="new">Description</target>
+      </trans-unit>
+      <trans-unit id="5773997570586398050" datatype="html">
+        <source>Descripción de la obra de arte</source>
+        <target state="new">Artwork&apos;s description</target>
+      </trans-unit>
+      <trans-unit id="6029610680012458054" datatype="html">
+        <source> Descripción requerido </source>
+        <target state="new"> Description required </target>
+      </trans-unit>
+      <trans-unit id="4524195647776048486" datatype="html">
+        <source> Descripción demasiado extenso </source>
+        <target state="new"> Description too long </target>
+      </trans-unit>
+      <trans-unit id="2759773909798147145" datatype="html">
+        <source>Tipo</source>
+        <target state="new">Type</target>
+      </trans-unit>
+      <trans-unit id="812255621593263646" datatype="html">
+        <source>Tipo de obra de arte</source>
+        <target state="new">Artwork&apos;s type</target>
+      </trans-unit>
+      <trans-unit id="3239456861598135931" datatype="html">
+        <source> Tipo requerido </source>
+        <target state="new"> Type required </target>
+      </trans-unit>
+      <trans-unit id="3132430609862081033" datatype="html">
+        <source>Artista</source>
+        <target state="new">Artist</target>
+      </trans-unit>
+      <trans-unit id="5073985301168615910" datatype="html">
+        <source> Artista requerido </source>
+        <target state="new"> Artist required </target>
+      </trans-unit>
+      <trans-unit id="1747623998263949970" datatype="html">
+        <source>Imagen de la obra de arte</source>
+        <target state="new">Artwork&apos;s image</target>
+      </trans-unit>
+      <trans-unit id="1375219779174508797" datatype="html">
+        <source>Obras de Arte</source>
+        <target state="new">Artworks</target>
+      </trans-unit>
+      <trans-unit id="3963084790900636398" datatype="html">
+        <source>Año de la obra de arte</source>
+        <target state="new">Artwork&apos;s year</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

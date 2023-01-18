@@ -1,0 +1,28 @@
+img {
+  height: 350px;
+  width: auto;
+  max-width: 400px;
+}
+
+a:link {
+  color: #0260ED;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #260db3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0242A2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #0242a24f;
+  background-color: transparent;
+  text-decoration: underline;
+}
